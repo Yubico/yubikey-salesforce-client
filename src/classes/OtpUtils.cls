@@ -40,9 +40,4 @@ public with sharing class OtpUtils {
   public static String getYubikeyId(String otp) {
     return otp.substring(0, 12);
   }
-  
-  public static boolean isUniqueId(String yubikeyId) {
-       List<User> usersWithSameYubikey = [SELECT yubikey_id__c from User where yubikey_id__c=:yubikeyId];
-       return usersWithSameYubikey.isEmpty();
-  }
 }
