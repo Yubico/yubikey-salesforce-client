@@ -9,15 +9,13 @@ OtpValidator validator = new OtpValidator();
 String result = validator.validate(otp, clientId);
 
 if(result == AuthenticationResult.OK) {
-  /* The OTP is valid! Now check that the YubiKey used belongs to this user,
-     using one of these methods:
-  
-      OtpUtils.getYubikeyId(otp);
-      
-      OtpUtils.getYubikeySerialNumber(otp);
-      
-    For example:
-  */
+  /* The OTP is valid! Now we want to check that the YubiKey belongs
+   * to this user. To do this, we need to compare the ID of the YubiKey
+   * used to generate the OTP with the YubiKey associated with the user's
+   * account.
+   *    
+   * For example:
+   */
   
   String yubikeyId = OtpUtils.getYubikeyId(otp)
   if(yubiKeyId == user.yubikeyId__c) {
