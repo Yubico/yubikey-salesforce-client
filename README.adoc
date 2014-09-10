@@ -3,8 +3,10 @@ yubikey-salesforce-client
 
 Apex classes for validating YubiKey OTP's (one-time passwords).
 
-## Usage
-``` java
+== Usage
+
+[source,java]
+----
 OtpValidator validator = new OtpValidator();
 String result = validator.validate(otp, clientId);
 
@@ -26,4 +28,4 @@ if(result == AuthenticationResult.OK) {
 } else {
   // Invalid OTP
 }
-```
+----
