@@ -29,3 +29,17 @@ if(result == AuthenticationResult.OK) {
   // Invalid OTP
 }
 ----
+
+== Optional utility methods
+
+Although not at all required, you sometimes might want to extract the
+YubiKey Serial Number from an OTP. This serial number will match the
+8-digit number that is printed on the device.
+
+
+[source,java]
+----
+// The first 12 characters of an OTP represents the serial number of the key
+String serialNumberEncoded = otp.substring(0, 12);
+String serialNumber = ModHex.getSerialNumber(serialNumberEncoded);
+----
