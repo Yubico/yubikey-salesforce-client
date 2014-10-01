@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <RemoteSiteSetting xmlns="http://soap.sforce.com/2006/04/metadata">
-    <description>YubiKey ValidationServer 1</description>
+    <description>YubiKey ValidationServer 4</description>
     <disableProtocolSecurity>false</disableProtocolSecurity>
     <isActive>true</isActive>
     <url>https://api4.yubico.com</url>
