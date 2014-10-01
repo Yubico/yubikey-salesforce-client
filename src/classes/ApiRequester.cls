@@ -1,3 +1,5 @@
+// Copyright Yubico 2014
+
 /*
  * Sends a request. Handles failover and geographical load-balancing.
  */

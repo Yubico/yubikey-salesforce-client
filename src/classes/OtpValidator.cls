@@ -1,3 +1,5 @@
+// Copyright Yubico 2014
+
 public with sharing class OtpValidator {
 
   public static String validate(String otp, String clientId) {

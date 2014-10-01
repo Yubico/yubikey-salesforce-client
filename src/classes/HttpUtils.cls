@@ -1,3 +1,5 @@
+// Copyright Yubico 2014
+
 public with sharing class HttpUtils {
 
   public static Map<String, String> parseResponseParameters(String responseBody) {

@@ -1,3 +1,5 @@
+// Copyright Yubico 2014
+
 public class AuthenticationResult {
   public static final String OK = 'OK';
   public static final String OK_VALIDATED_AND_REGISTERED = 'OK_VALIDATED_AND_REGISTERED';

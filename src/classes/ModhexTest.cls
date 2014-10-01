@@ -1,3 +1,5 @@
+// Copyright Yubico 2014
+
 @isTest
 public class ModhexTest {
 

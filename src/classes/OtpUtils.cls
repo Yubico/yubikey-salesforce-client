@@ -1,3 +1,5 @@
+// Copyright Yubico 2014
+
 public with sharing class OtpUtils {
   
   static final Integer FIRST_PRINTABLE_CHAR = 32;

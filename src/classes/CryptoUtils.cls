@@ -1,3 +1,5 @@
+// Copyright Yubico 2014
+
 public with sharing class CryptoUtils {
   
   public static String generateNonce() {

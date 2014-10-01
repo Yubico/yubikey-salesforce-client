@@ -1,3 +1,5 @@
+// Copyright Yubico 2014
+
 public with sharing class SequentialResponseGenerator implements HttpCalloutMock {
 
   private final List<String> responses;
