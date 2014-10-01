@@ -8,13 +8,16 @@ public with sharing class OtpValidator {
       Map<String, String> responseParameters = HttpUtils.parseResponseParameters(res.getBody()); 
       String result = responseParameters.get('status');
 
-      if(result == AuthenticationResult.OK) {
-          String nonceInResponse = responseParameters.get('nonce');
-          if (nonceInResponse != nonceInRequest) { 
-              return AuthenticationResult.NONCE_MISMATCH;
-          } 
-      }     
-
+      String nonceInResponse = responseParameters.get('nonce');
+      if (nonceInResponse != nonceInRequest) { 
+          return AuthenticationResult.NONCE_MISMATCH;
+      }
+      
+      String otpInResponse = responseParameters.get('otp');
+      if (otpInResponse != otp) { 
+          return AuthenticationResult.OTP_MISMATCH;
+      } 
+      
       return result;
   }
 }

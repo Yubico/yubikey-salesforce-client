@@ -5,8 +5,8 @@
 public with sharing class ApiRequester {
  
     public static final List<String> SERVERS_NORTH_AMERICA = new List<String> {'api', 'api2'};
-    public static final List<String> SERVERS_APAC = new List<String> {'api3', 'api4'};
-    public static final List<String> SERVERS_EMEA = new List<String> {'api5'};
+    public static final List<String> SERVERS_APAC = new List<String> {'api3'};
+    public static final List<String> SERVERS_EMEA = new List<String> {'api5', 'api4'};
     
     public static final Integer SHORT_TIMEOUT_MS = 4000;
     public static final Integer LONG_TIMEOUT_MS = 20000;
