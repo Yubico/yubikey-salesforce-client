@@ -30,6 +30,8 @@ if(result == AuthenticationResult.OK) {
 }
 ----
 
+For a more thorough usage example, see link:docs/Usage_Example.adoc[docs/Usage_Example].
+
 == Optional utility methods
 
 Although not at all required, you sometimes might want to extract the
