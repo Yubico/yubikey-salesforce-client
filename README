@@ -1,7 +1,7 @@
 yubikey-salesforce-client
 =========================
 
-Apex classes for validating YubiKey OTP's (one-time passwords) againt YubiCloud.
+Apex classes for validating link:http://www.yubico.com/products/yubikey-hardware/yubikey/technical-description[YubiKey OTP]'s (One-Time Passwords) againt YubiCloud.
 
 == Usage
 
