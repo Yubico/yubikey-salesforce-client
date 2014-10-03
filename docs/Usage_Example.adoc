@@ -27,10 +27,10 @@ that is emitted when you touch your YubiKey.
 
 == Apex Plug-in
 
-An Apex plug-in is an Apex class that implements the `Process.Plugin` interface. Apex plug-ins
+An Apex plug-in is an Apex class that implements the link:https://www.salesforce.com/us/developer/docs/apexcode/Content/apex_process_plugin.htm[Process.Plugin] interface. Apex plug-ins
 can be used by Flows to communicate with Apex code.
 
-Below is an example of how you could implement an Apex plug-in that uses the `OtpValidator` class
+Below is an example of how you could implement an Apex plug-in that uses the link:https://github.com/Yubico/yubikey-salesforce-client/blob/master/src/classes/OtpValidator.cls[OtpValidator] class
 from _yubikey-salesforce-client_ to validate YubiKey One-Time Passwords.
 
 [source,java]
@@ -99,6 +99,8 @@ In the screen configuration, add a Textbox (in which the user can enter the OTP)
 
 image:screenshots/flow_screen.png[]
 
+Once you have created the screen, make it the starting element by clicking the green plus icon that
+appears when hovering over it.
 
 === Apex Plug-in
 Create a *YubikeyPlugin* and configure it like this:
@@ -131,7 +133,7 @@ Note that we did not specify where to go if the Decision outcome is _Success_. W
 the flow will finish. This is exactly what we want since finishing the flow effectively logs the user in.
 
 === Testing
-Test the Flow by clicking Run.
+Test the Flow by clicking *Run*.
 
 == Login Flow
 When your Flow works as expected, it is time to tell Salesforce to run the flow when a user logs in.
