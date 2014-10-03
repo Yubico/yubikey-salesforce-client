@@ -5,7 +5,7 @@ This is an example of how to integrate the link:https://github.com/Yubico/yubike
 an Apex library for validating link:http://www.yubico.com/products/yubikey-hardware/yubikey/technical-description/[YubiKey One-Time Passwords], into your Salesforce organization.
 This will enable the users in your Salesforce organization to use link:http://www.yubico.com/about/intro[YubiKeys] as a second factor when logging in.
 
-> NOTE: If you prefer an off-the-shelf product, we recommend
+> *NOTE:* If you prefer an off-the-shelf product, we recommend
 using our link:http://yubico.com/salesforce[YubiKey for Salesforce app].
 
 In order to allow users to login using their YubiKeys, we have to create:
@@ -147,7 +147,7 @@ Test the Flow by clicking *Run*. When the Flow works as expected, click *Save*, 
 == Login Flow
 It is time to configure Salesforce to run our flow when a user of a certain profile logs in.
 
-> WARNING: Do not create a Login Flow for the System Administrator profile (until you're confident that things works the way
+> *WARNING:* Do not create a Login Flow for the System Administrator profile (until you're confident that things works the way
 that you want) – you risk locking yourself out of Salesforce. Instead, create a test account
 (remember to set the _yubikeyId__c_ field) that has another profile.
 
