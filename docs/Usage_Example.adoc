@@ -132,11 +132,11 @@ This means that if the OTP was invalid (which will set the Decision outcome to _
 Note that we did not specify where to go if the Decision outcome is _Success_. When such an outcome (without an arrow associated to it) occurs
 the flow will finish. This is exactly what we want since finishing the flow effectively logs the user in.
 
-=== Testing
-Test the Flow by clicking *Run*.
+=== Testing and activating
+Test the Flow by clicking *Run*. When the Flow works as expected, click *Save*, *Close* and then *Activate*. 
 
 == Login Flow
-When your Flow works as expected, it is time to tell Salesforce to run the flow when a user logs in.
+It is time to tell Salesforce to run the flow when a user logs in.
 Before we go ahead, we recommend that you create a backup admin account for your Salesforce organization; otherwise you will be locked
 out of your organization if you have made a mistake (everyone makes mistakes!).
 
