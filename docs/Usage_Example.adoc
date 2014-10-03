@@ -1,8 +1,8 @@
 Login example
 =============
 
-This is an example of how to integrate yubikey-salesforce-client into your
-Salesforce organization. If you prefer an off-the-shelf solution, we recommend
+This is an example of how to integrate the link:https://github.com/Yubico/yubikey-salesforce-client[yubikey-salesforce-client]
+Apex library into your Salesforce organization. If you prefer an off-the-shelf solution, we recommend
 using our link:http://yubico.com/salesforce[YubiKey for Salesforce app].
 
 In order to allow users to login using their YubiKeys, we have to create:
