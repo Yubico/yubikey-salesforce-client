@@ -5,7 +5,7 @@ Apex classes for validating link:http://www.yubico.com/products/yubikey-hardware
 (One-Time Passwords) againt link:http://www.yubico.com/products/services-software/yubicloud[YubiCloud].
 
 > *NOTE:* If you prefer an off-the-shelf product, we recommend
-using our link:http://yubi.co/sf[YubiKey for Salesforce app].
+using our link:http://yubico.com/salesforce[YubiKey for Salesforce app].
 
 == Usage
 
