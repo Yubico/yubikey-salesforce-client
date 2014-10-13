@@ -6,7 +6,7 @@ an Apex library for validating link:http://www.yubico.com/products/yubikey-hardw
 This will enable the users in your Salesforce organization to use link:http://www.yubico.com/about/intro[YubiKeys] as a second factor when logging in.
 
 > *NOTE:* If you prefer an off-the-shelf product, we recommend
-using our link:http://yubi.co/sf[YubiKey for Salesforce app].
+using our link:http://yubico.com/salesforce[YubiKey for Salesforce app].
 
 In order to allow users to login using their YubiKeys, we have to create:
 
