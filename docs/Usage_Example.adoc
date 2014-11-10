@@ -5,15 +5,15 @@ This is an example of how to integrate the link:https://github.com/Yubico/yubike
 an Apex library for validating link:http://www.yubico.com/products/yubikey-hardware/yubikey/technical-description/[YubiKey One-Time Passwords], into your Salesforce organization.
 This will enable the users in your Salesforce organization to use link:http://www.yubico.com/about/intro[YubiKeys] as a second factor when logging in.
 
-> *NOTE:* If you prefer an off-the-shelf product, we recommend
-using our link:http://yubico.com/salesforce[YubiKey for Salesforce app].
+NOTE: If you prefer an off-the-shelf product, we recommend
+using our http://yubico.com/salesforce[YubiKey for Salesforce app].
 
 In order to allow users to login using their YubiKeys, we have to create:
 
  - A custom User Field holding the YubiKey ID of that user's YubiKey. 
  - A _Flow_.
  - An _Apex Plug-in_ allowing our Flow to query Apex code.
- - A _Login Flow_ that tells Salesforce to run our Flow when logging in users.
+ - A https://developer.salesforce.com/page/Login-Flows[_Login Flow_] that tells Salesforce to run our Flow when logging in users.
 
 
 == Overview
@@ -145,12 +145,14 @@ the flow will finish. This is exactly what we want since finishing the flow effe
 Test the Flow by clicking *Run*. When the Flow works as expected, click *Save*, *Close* and then *Activate*. 
 
 == Login Flow
-It is time to tell Salesforce to run the flow when a user logs in.
-Before we go ahead, we recommend that you create a backup admin account for your Salesforce organization; otherwise you will be locked
-out of your organization if you have made a mistake (everyone makes mistakes!).
+It is time to configure Salesforce to run our flow when a user of a certain profile logs in.
+
+> *WARNING:* Do not create a Login Flow for the System Administrator profile (until you're confident that things works the way
+that you want) – you risk locking yourself out of Salesforce. Instead, create a test account
+(remember to set the _yubikeyId__c_ field) that has another profile.
 
  1. From setup, click *Security Controls | Login Flows*.
  2. Click *New*.
- 3. Associate the Flow that you just created with the Profile of your user.
+ 3. Associate the Flow that you just created with a Profile whose users you want to run the Flow during login.
 
-That's it! The next time you log in to Salesforce, you will have to enter a valid YubiKey OTP.
+That's it! The next time a user of that profile logs in to Salesforce, they will have to enter a valid YubiKey OTP.
